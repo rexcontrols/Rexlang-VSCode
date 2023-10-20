@@ -1,0 +1,68 @@
+{
+  "name": "rexlang",
+  "displayName": "Rexlang",
+  "description": "",
+  "version": "0.0.8",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:c"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rexlang.activate",
+        "title": "Rexlang: Activate in workspace"
+      },
+      {
+        "command": "rexlang.deactivate",
+        "title": "Rexlang: Deactivate in workspace"
+      }
+    ]
+  },
+  "repository": {
+    "url": "git+https://github.com/rexcontrols/Rexlang-VSCode"
+  },
+  "extensionDependencies": ["ms-vscode.cpptools"],
+  "pricing": "Free",
+  "icon": "icons/REXYGEN_logo.png",
+  "publisher": "JanGebhart",
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.83.0",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2",
+    "ts-loader": "^9.4.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-electron": "^2.3.4"
+  },
+  "bugs": {
+    "url": "https://github.com/rexcontrols/Rexlang-VSCode/issues"
+  },
+  "homepage": "https://github.com/rexcontrols/Rexlang-VSCode#readme",
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
