@@ -23,6 +23,12 @@
         "command": "rexlang.deactivate",
         "title": "Rexlang: Deactivate in workspace"
       }
+    ],
+    "snippets": [
+      {
+        "language": "c",
+        "path": "./snippets/rexlang.json"
+      }
     ]
   },
   "repository": {

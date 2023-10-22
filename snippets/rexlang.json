@@ -1,0 +1,102 @@
+{
+    "Rexlang double input": {
+        "prefix": [
+            "din",
+            "double input"
+        ],
+        "body": [
+            "double input($1) $2;$0"
+        ]
+    },
+    "Rexlang long input": {
+        "prefix": [
+            "lin",
+            "long input"
+        ],
+        "body": [
+            "long input($1) $2;$0"
+        ]
+    },
+    "Rexlang long reference": {
+        "prefix": [
+            "rin",
+            "reference input"
+        ],
+        "body": [
+            "//reference input($1) $2;",
+            "#define $2 $1$0"
+        ]
+    },
+    "Rexlang double parameter": {
+        "prefix": [
+            "dpar",
+            "double parameter"
+        ],
+        "body": [
+            "double parameter($1) $2;$0"
+        ]
+    },
+    "Rexlang long parameter": {
+        "prefix": [
+            "lpar",
+            "long parameter"
+        ],
+        "body": [
+            "long parameter($1) $2;$0"
+        ]
+    },
+    "Rexlang double output": {
+        "prefix": [
+            "dout",
+            "double output"
+        ],
+        "body": [
+            "double output($1) $2;$0"
+        ]
+    },
+    "Rexlang long output": {
+        "prefix": [
+            "lout",
+            "long output"
+        ],
+        "body": [
+            "long output($1) $2;$0"
+        ]
+    },
+    "Rexlang init": {
+        "prefix": [
+            "init",
+            "long init"
+        ],
+        "body": [
+            "long init(void)",
+            "{",
+            "return 0;",
+            "}"
+        ]
+    },
+    "Rexlang main": {
+        "prefix": [
+            "main",
+            "long main"
+        ],
+        "body": [
+            "long main(void)",
+            "{",
+            "return 0;",
+            "}"
+        ]
+    },
+    "Rexlang exit": {
+        "prefix": [
+            "exit",
+            "long exit"
+        ],
+        "body": [
+            "long exit(void)",
+            "{",
+            "return 0;",
+            "}"
+        ]
+    },
+}

@@ -1,10 +1,10 @@
 # Rexlang
 This extension adds support for Rexlang syntax.
 
-## Rexlang doc
+## Rexlang Documentation
 https://www.rexygen.com/doc/ENGLISH/MANUALS/BRef/REXLANG.html
 
-## Rexygen doc
+## Rexygen Documentation
 https://www.rexygen.com/
 
 ## Features
