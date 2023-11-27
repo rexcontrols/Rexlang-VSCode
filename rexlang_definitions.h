@@ -119,6 +119,10 @@ double str2double(string str);
 // If radix is not specified, default value is radix=10. The output string does not contain any identification of the numerical system used (e.g. the 0x prefix for the hexadecimal system).
 // string long2str(num [, radix])
 char long2str(long num);
+// Converts an integer number num to text. The optional parameter radix specifies the numerical system in which the conversion is to be performed (typically 10 or 16).
+// If radix is not specified, default value is radix=10. The output string does not contain any identification of the numerical system used (e.g. the 0x prefix for the hexadecimal system).
+// string long2str(num [, radix])
+char long2str(long num, long radix);
 
 // Converts a decimal number num to text.
 char double2str(double num);
@@ -286,6 +290,14 @@ double GetExtDouble(int ItemID);
 
 // Similar to GetExtInt(ItemID) but for strings.
 string GetExtString(int ItemID);
+
+// Sets the input/output/parameter of arbitrary block in REXYGEN algorithm to value. Such an external data item is referenced by the ItemID parameter. The structure of the string parameter ItemID is the same as in e.g. the sc parameter of the SETPI function block.
+// The type of the external data item (long/double/string) must correspond with the type of the value parameter. If the value cannot be set (e.g. invalid or non-existing ItemID, data type conflict, etc.), the REXLANG block issues an error and must be reset.
+void SetExt(int ItemID, long value);
+
+// Sets the input/output/parameter of arbitrary block in REXYGEN algorithm to value. Such an external data item is referenced by the ItemID parameter. The structure of the string parameter ItemID is the same as in e.g. the sc parameter of the SETPI function block.
+// The type of the external data item (long/double/string) must correspond with the type of the value parameter. If the value cannot be set (e.g. invalid or non-existing ItemID, data type conflict, etc.), the REXLANG block issues an error and must be reset.
+void SetExt(int ItemID, double value);
 
 // Sets the input/output/parameter of arbitrary block in REXYGEN algorithm to value. Such an external data item is referenced by the ItemID parameter. The structure of the string parameter ItemID is the same as in e.g. the sc parameter of the SETPI function block.
 // The type of the external data item (long/double/string) must correspond with the type of the value parameter. If the value cannot be set (e.g. invalid or non-existing ItemID, data type conflict, etc.), the REXLANG block issues an error and must be reset.

@@ -2,7 +2,7 @@
   "name": "rexlang",
   "displayName": "Rexlang",
   "description": "",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "engines": {
     "vscode": "^1.83.0"
   },
