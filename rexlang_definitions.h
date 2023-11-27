@@ -118,10 +118,10 @@ double str2double(string str);
 // Converts an integer number num to text. The optional parameter radix specifies the numerical system in which the conversion is to be performed (typically 10 or 16).
 // If radix is not specified, default value is radix=10. The output string does not contain any identification of the numerical system used (e.g. the 0x prefix for the hexadecimal system).
 // string long2str(num [, radix])
-string long2str(long num);
+char long2str(long num);
 
 // Converts a decimal number num to text.
-string double2str(double num);
+char double2str(double num);
 
 // Function copies the src string to the dest string. Implemented for compatibility with ANSI C. The construction dest=src yields the same result.
 void strcpy(string dest, string src);
